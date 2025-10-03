@@ -1,3 +1,7 @@
 python-telegram-bot>=20.0
-yt-dlp==2023.11.16
+yt-dlp
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+
 

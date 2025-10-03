@@ -1,8 +1,5 @@
 python-telegram-bot==20.7
 yt-dlp==2023.11.16
-google-api-python-client==2.108.0
-google-auth-httplib2==0.1.1
-google-auth-oauthlib==1.1.0
 
 
 

@@ -6,7 +6,7 @@ import logging
 import asyncio
 import yt_dlp
 import mimetypes
-from telegram import Application, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes, CallbackQueryHandler
 from datetime import datetime
 
@@ -55,7 +55,7 @@ def progress_hook(d, chat_id):
         percent = d.get('_percent_str') or d.get('percent')
         if percent is not None:
             if isinstance(percent, (int, float)):
-                percent_str = f"{percent}%"
+                percent_str = f"{percent:.1f}%"
             else:
                 percent_str = str(percent).strip()
             download_progress[chat_id] = percent_str
@@ -538,6 +538,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-

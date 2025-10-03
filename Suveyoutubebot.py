@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-
+import imghdr
 import os
 import re
 import logging
@@ -539,3 +539,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
